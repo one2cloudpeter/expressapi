@@ -1,12 +1,15 @@
-import express from "express";
+const express = require('express');
 
+// Constants
+const PORT = 8080;
+const HOST = '0.0.0.0';
+
+// App
 const app = express();
-const port = 3000;
-
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+app.get('/', (req, res) => {
+  res.send('Hello World');
 });
 
-app.listen(port, () => {
-  console.log(`API listening at http://localhost:${port}`);
+app.listen(PORT, HOST, () => {
+  console.log(`Running on http://${HOST}:${PORT}`);
 });
