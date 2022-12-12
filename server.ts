@@ -1,4 +1,4 @@
-import express from "express";
+import express from 'express';
 
 // Constants
 const PORT = 8080;
